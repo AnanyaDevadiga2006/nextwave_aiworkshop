@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Build Your First AI Project in 60 Minutes – Free Workshop</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#fbf6ec;--card:#fffdf8;--ink:#17261f;--mute:#5d6b63;--line:#e3dccb;--acc:#e8591a;--acc2:#0f6b4a;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a15;--card:#17241d;--ink:#f3efe3;--mute:#9db0a5;--line:#2b3d33;--acc:#ff8a4c;--acc2:#4fd1a1;--on:#101a15}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Figtree,system-ui,sans-serif}
+.w{max-width:1000px;margin:0 auto;padding:0 18px}
+h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;margin:0;line-height:1.08}
+h1{font-size:clamp(2.1rem,6.4vw,3.8rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.7rem;font-weight:800;margin-bottom:14px}h3{font-size:1.1rem}
+.mono{font-family:'JetBrains Mono',monospace}.mute{color:var(--mute)}
+.top{padding:36px 0 26px}.tag{display:inline-block;background:var(--acc2);color:var(--on);font:500 .8rem 'JetBrains Mono',monospace;padding:4px 10px;border-radius:99px;margin-bottom:14px}
+.top p{max-width:56ch;font-size:1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.chips span{border:1.5px solid var(--ink);border-radius:8px;padding:5px 11px;font-weight:600;font-size:.9rem}
+.cta{display:inline-block;background:var(--acc);color:var(--on);font-weight:700;text-decoration:none;padding:13px 22px;border-radius:10px;border:0;font-size:1rem;cursor:pointer}
+section{padding:26px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h3{margin:6px 0}.ic{font-size:1.6rem}
+.tl{border-left:3px solid var(--acc2);margin-left:6px;padding-left:18px}
+.tl div{margin-bottom:16px;position:relative}.tl div:before{content:"";position:absolute;left:-26px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--acc)}
+.tl b{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--acc2);display:block}
+.reg{display:grid;gap:22px;grid-template-columns:1fr 1fr}@media(max-width:760px){.reg{grid-template-columns:1fr}}
+label{display:block;font-weight:600;font-size:.88rem;margin:11px 0 4px}
+input,select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:8px;padding:10px}
+input:focus-visible,select:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.err{color:#c0301a;font-size:.88rem;min-height:1.3em;margin-top:8px}
+.ok{background:var(--card);border:2px solid var(--acc2);border-radius:12px;padding:18px}
+.code{font:500 1.4rem 'JetBrains Mono',monospace;background:var(--bg);border:1.5px dashed var(--ink);border-radius:8px;padding:4px 10px;display:inline-block;margin:6px 0}
+.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);padding:10px 16px;border-radius:10px;font-weight:600;cursor:pointer;margin:8px 8px 0 0;font-size:.95rem}
+.bar{height:12px;background:var(--line);border-radius:7px;overflow:hidden;margin:6px 0 12px}.bar i{display:block;height:100%;background:var(--acc);width:0;transition:width .5s}
+.row{display:flex;justify-content:space-between;font-size:.92rem}
+table{width:100%;border-collapse:collapse;font-size:.92rem}th,td{text-align:left;padding:7px 4px;border-bottom:1px solid var(--line)}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}summary{cursor:pointer;font-weight:600}
+footer{padding:30px 0 50px}
+</style>
+</head>
+<body>
+<div class="w">
+<header class="top">
+  <span class="tag">FREE LIVE WORKSHOP · 60 MIN</span>
+  <h1>Build your first AI project in 60 minutes.</h1>
+  <p>No AI background needed. You start with an idea and finish with a project that runs online, which you can put on your resume and explain in interviews.</p>
+  <div class="chips"><span>For final-year engineering students</span><span>Sample slot: Sat, 7:00 PM IST</span><span>100% free</span></div>
+  <a class="cta" href="#register" id="go">Reserve my seat</a>
+</header>
+
+<section>
+  <h2>What you’ll walk away with</h2>
+  <div class="grid">
+    <div class="card"><div class="ic">🚀</div><h3>A live AI project</h3><p class="mute">Built by you during the session and deployed with a link you can share.</p></div>
+    <div class="card"><div class="ic">📄</div><h3>A resume-ready bullet</h3><p class="mute">Two lines describing the project in the way recruiters read them.</p></div>
+    <div class="card"><div class="ic">🎤</div><h3>A 2-minute interview story</h3><p class="mute">What you built, why, and what you would improve, so you can answer “tell me about a project”.</p></div>
+    <div class="card"><div class="ic">🧰</div><h3>Starter template + prompt pack</h3><p class="mute">Reuse them to build your second and third project on your own.</p></div>
+    <div class="card"><div class="ic">🏅</div><h3>Participation certificate</h3><p class="mute">For everyone who builds and submits the project link.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>The 60 minutes, minute by minute</h2>
+  <div class="tl">
+    <div><b>0–5 MIN</b>Pick your idea from 4 beginner-friendly options.</div>
+    <div><b>5–15 MIN</b>How to talk to an AI tool so it builds what you actually want.</div>
+    <div><b>15–40 MIN</b>Build live. You follow along and your project starts working.</div>
+    <div><b>40–52 MIN</b>Put it online and test it on your phone.</div>
+    <div><b>52–60 MIN</b>Turn it into a resume bullet and an interview answer, then Q&amp;A.</div>
+  </div>
+</section>
+
+<section id="register">
+  <div class="reg">
+    <div class="card">
+      <h2>Reserve your seat</h2><span class="mute">Takes 20 seconds</span>
+      <div id="formbox">
+        <label for="fn">Full name</label><input id="fn" autocomplete="name">
+        <label for="em">College email</label><input id="em" type="email" autocomplete="email">
+        <label for="cn">College name</label><input id="cn">
+        <label for="br">Branch</label>
+        <select id="br"><option>CSE / IT</option><option>ECE / EEE</option><option>Mechanical</option><option>Civil</option><option>Other</option></select>
+        <label for="hd">How did you hear about this?</label>
+        <select id="hd"><option value="cap">WhatsApp group or a friend</option><option value="club">Club or placement cell</option><option value="soc">Email or LinkedIn</option></select>
+        <label for="rf">Referral code (optional)</label><input id="rf" placeholder="e.g. ANANYA-RVCE" autocapitalize="characters">
+        <div class="err" id="err" role="alert"></div>
+        <button class="cta" id="sub" style="width:100%">Register for free</button>
+      </div>
+      <div id="done" class="ok" hidden></div>
+    </div>
+    <div>
+      <h2>Who is this for?</h2>
+      <p>Any final-year student who has seen “AI” everywhere and never built anything with it. If you have a project gap on your resume, this is for you.</p>
+      <h2 style="margin-top:22px">Questions</h2>
+      <details><summary>Do I need to know coding or AI?</summary><p class="mute">No. You follow the steps live, and the template gets you started.</p></details>
+      <details><summary>What do I need?</summary><p class="mute">A laptop with internet and a free account on the tools shared before the session.</p></details>
+      <details><summary>Will there be a recording?</summary><p class="mute">Registered students get the recording and the starter pack by email.</p></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <details id="dash">
+    <summary>Organizer view: campaign tracker (prototype)</summary>
+    <div style="margin-top:14px">
+      <div class="row"><b>Registrations</b><b><span id="tot">0</span> / 500</b></div>
+      <div class="bar"><i id="fill"></i></div>
+      <div class="mute" id="pace" style="margin-bottom:14px"></div>
+      <div id="ch"></div>
+      <h3 style="margin:14px 0 4px">Referral leaderboard</h3>
+      <table><thead><tr><th>Code</th><th>Referrals</th></tr></thead><tbody id="lb"></tbody></table>
+      <button class="alt" id="demo">Load demo data</button><button class="alt" id="rst">Reset</button>
+      <p class="mute" style="font-size:.85rem;margin-top:12px">Prototype: data stays in this browser. The live version would write each sign-up to a Google Sheet through a form webhook.</p>
+    </div>
+  </details>
+</section>
+<footer class="mute">A free workshop by NxtWave. Prototype built for the Growth Intern challenge.</footer>
+</div>
+<script>
+var K='wk_v2',D={regs:[]},$=function(i){return document.getElementById(i)};
+try{var s=localStorage.getItem(K);if(s)D=JSON.parse(s)}catch(e){}
+function save(){try{localStorage.setItem(K,JSON.stringify(D))}catch(e){}}
+var T={cap:320,club:100,soc:80},N={cap:'Campus captains (WhatsApp, friends)',club:'Clubs & placement cells',soc:'Email & LinkedIn'};
+function pre(){var h=(location.hash||'').replace('#','');if(h&&h!=='register'&&/^[A-Za-z0-9-]{3,20}$/.test(h))$('rf').value=h.toUpperCase()}
+function mkCode(n){return n.toUpperCase().replace(/[^A-Z]/g,'').slice(0,6)+Math.floor(100+Math.random()*900)}
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function render(){
+  var n=D.regs.length;$('tot').textContent=n;$('fill').style.width=Math.min(100,n/5)+'%';
+  $('pace').textContent=n>=500?'Target reached.':(500-n)+' to go. Needs about '+Math.ceil((500-n)/7)+' per day over 7 days.';
+  var c={cap:0,club:0,soc:0};D.regs.forEach(function(r){c[r.hd]++});
+  $('ch').innerHTML=Object.keys(T).map(function(k){return '<div class="row"><span>'+N[k]+' <span class="mute">('+T[k]+')</span></span><b>'+c[k]+'</b></div><div class="bar"><i style="width:'+Math.min(100,c[k]/T[k]*100)+'%"></i></div>'}).join('');
+  var m={};D.regs.forEach(function(r){if(r.rf)m[r.rf]=(m[r.rf]||0)+1});
+  var l=Object.keys(m).sort(function(a,b){return m[b]-m[a]}).slice(0,8);
+  $('lb').innerHTML=l.length?l.map(function(k){return '<tr><td class="mono">'+esc(k)+'</td><td>'+m[k]+'</td></tr>'}).join(''):'<tr><td colspan="2" class="mute">No referrals yet. Register using a friend’s code to test.</td></tr>';
+}
+$('sub').onclick=function(){
+  var fn=$('fn').value.trim(),em=$('em').value.trim().toLowerCase(),cn=$('cn').value.trim(),e=$('err');
+  if(!fn||!cn){e.textContent='Please enter your name and college.';return}
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){e.textContent='Please enter a valid college email.';return}
+  if(D.regs.some(function(r){return r.em===em})){e.textContent='This email is already registered.';return}
+  e.textContent='';
+  var my=mkCode(fn),rf=$('rf').value.trim().toUpperCase();
+  D.regs.push({fn:fn,em:em,cn:cn,br:$('br').value,hd:$('hd').value,rf:rf,my:my});save();render();
+  var msg='I just reserved my seat for a free workshop: Build Your First AI Project in 60 Minutes. You build a live project and leave with a resume bullet. Join with my code '+my+': '+location.href.split('#')[0]+'#'+my;
+  $('formbox').hidden=true;var d=$('done');d.hidden=false;
+  d.innerHTML='<h3>You’re in, <span id="nm"></span>! 🎉</h3><p>We’ll email the joining link and starter pack to your college email.</p><p><b>Bring a friend.</b> Share your code:</p><div class="code" id="mc"></div><br><button class="alt" id="wa">Share on WhatsApp</button><button class="alt" id="cp">Copy message</button><span class="mute" id="cpo"></span>';
+  $('nm').textContent=fn.split(' ')[0];$('mc').textContent=my;
+  $('wa').onclick=function(){window.open('https://wa.me/?text='+encodeURIComponent(msg),'_blank')};
+  $('cp').onclick=function(){(navigator.clipboard?navigator.clipboard.writeText(msg):Promise.reject()).then(function(){$('cpo').textContent='Copied.'}).catch(function(){$('cpo').textContent='Copy not available here.'})};
+};
+$('demo').onclick=function(){
+  var cs=['ANANYA-RVCE','ROHIT-VIT','SANA-PES'],hs=['cap','cap','cap','club','soc'];
+  for(var i=0;i<24;i++){var h=hs[i%5];D.regs.push({fn:'Demo '+i,em:'demo'+Date.now()+i+'@x.edu',cn:'Demo',br:'CSE / IT',hd:h,rf:h==='cap'?cs[i%3]:'',my:'D'+i})}
+  save();render()};
+$('rst').onclick=function(){D={regs:[]};save();render()};
+pre();render();
+</script>
+</body>
+</html>
